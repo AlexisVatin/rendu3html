@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Analyse</title>
+    <script src="https://kit.fontawesome.com/c159095049.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/logo_a.jpg" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Envoyer un message</h1>
+      <form>
+        <div class="form-group">
+          <label for="objet">Objet du mail</label>
+          <input type="text" id="objet" name="objet" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="phone">Numéro de téléphone</label>
+          <input type="tel" id="phone" name="phone" />
+        </div>
+        <div class="form-group">
+          <label for="message">Contenu du message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+  </body>
+</html>
