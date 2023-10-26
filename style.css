@@ -9,10 +9,17 @@ body {
   min-height: 100vh;
 }
 /* page tableau de bord */
-.dashboard {
+.dashboard,
+.analyse,
+.messagerie {
   display: flex;
   justify-content: space-around;
 }
+
+.messagerie {
+  min-height: 50vh;
+}
+
 .module {
   text-decoration: none;
   border: 1px solid #ccc;
@@ -32,7 +39,34 @@ body {
   text-align-last: center;
 }
 
-/* page messagerie */
+/* page Analyse */
+
+table {
+  width: 70%; /* Ajustez la largeur du tableau selon vos besoins */
+  text-align: center;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+th {
+  background-color: #1f2937;
+  color: #fff;
+}
+
+tr:nth-child(even) {
+  background-color: #1f1f1f; /* Couleur de fond pour les lignes paires */
+  color: #fff; /* Couleur du texte pour les lignes impaires */
+}
+
+tr:nth-child(odd) {
+  background-color: #1f2937; /* Couleur de fond pour les lignes impaires */
+  color: #fff; /* Couleur du texte pour les lignes impaires */
+}
 
 /* barre de navigation */
 
@@ -103,4 +137,45 @@ body {
 
 #content {
   margin-left: 10%; /* Pour laisser de l'espace pour la sidebar */
+}
+
+/* Page de messagerie */
+
+form {
+  background-color: #111827;
+  padding: 20px;
+  width: 70%; /* Ajustez la largeur du formulaire selon vos besoins */
+  text-align: center;
+  margin: 0 auto;
+}
+.messagerie input[type="text"],
+.messagerie input[type="email"],
+.messagerie input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="tel"]::placeholder,
+textarea::placeholder {
+  color: #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #1f2937;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }

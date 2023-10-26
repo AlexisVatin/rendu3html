@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../style.css" />
-    <title>Analyse</title>
+    <title>Tableau de bord</title>
     <script src="https://kit.fontawesome.com/c159095049.js" crossorigin="anonymous"></script>
-    <link rel="icon" href="img/logo_a.jpg" />
+    <link rel="icon" href="../img/asptt.png" />
   </head>
+
   <body>
     <!-- bandeau de navigation horizontal et latéral -->
     <div id="search-bar">
@@ -22,34 +23,23 @@
       <ul>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="analyse.html">Analyse des matchs</a></li>
-        <li><a href="reservation.html">Réservation d'un terrain</a></li>
         <li><a href="liste.html">Liste des équipes</a></li>
         <li><a href="messagerie.html">Messagerie</a></li>
       </ul>
     </div>
     <!-- Fin du bandeau de navigation horizontal et latéral -->
 
-    <div class="container">
-      <h1>Envoyer un message</h1>
-      <form>
-        <div class="form-group">
-          <label for="objet">Objet du mail</label>
-          <input type="text" id="objet" name="objet" required />
-        </div>
-        <div class="form-group">
-          <label for="email">Adresse e-mail</label>
-          <input type="email" id="email" name="email" required />
-        </div>
-        <div class="form-group">
-          <label for="phone">Numéro de téléphone</label>
-          <input type="tel" id="phone" name="phone" />
-        </div>
-        <div class="form-group">
-          <label for="message">Contenu du message</label>
-          <textarea id="message" name="message" rows="6" required></textarea>
-        </div>
-        <button type="submit">Envoyer</button>
-      </form>
+    <div id="content">
+      <h1 class="title">Contactez nous</h1>
+      <div class="messagerie">
+        <form>
+          <input type="text" name="object" placeholder="Objet du mail" />
+          <input type="email" name="email" placeholder="Adresse mail" />
+          <input type="tel" name="phone" placeholder="Numéro de téléphone" />
+          <textarea name="message" placeholder="Contenu du message"></textarea>
+          <input type="submit" value="Envoyer" />
+        </form>
+      </div>
     </div>
   </body>
 </html>
