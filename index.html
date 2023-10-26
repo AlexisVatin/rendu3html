@@ -9,28 +9,50 @@
   </head>
 
   <body>
-    <h1>Tableau de Bord</h1>
+    <!-- bandeau de navigation horizontal et latéral -->
+    <div id="search-bar">
+      <span class="user-info">Bienvenue sur le site de l'asptt</span>
+      <div class="search-text-bar">
+        <input type="text" placeholder="Rechercher..." />
+        <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+      <span class="user-info">Bonjour Alexis</span>
+    </div>
 
-    <div class="dashboard">
-      <a class="module" href="pages/analyse.html">
-        <h2>Analyse des matchs</h2>
-        <!-- Contenu du module "Analyse des matchs" -->
-      </a>
+    <div id="sidebar">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="pages/analyse.html">Analyse des matchs</a></li>
+        <li><a href="pages/reservation.html">Réservation d'un terrain</a></li>
+        <li><a href="pages/liste.html">Liste des équipes</a></li>
+        <li><a href="pages/messagerie.html">Messagerie</a></li>
+      </ul>
+    </div>
+    <!-- Fin du bandeau de navigation horizontal et latéral -->
 
-      <a class="module" href="pages/reservation.html">
-        <h2>Réservation d'un terrain</h2>
-        <!-- Contenu du module "Réservation d'un terrain" -->
-      </a>
+    <div id="content">
+      <h1 class="title">Tableau de Bord</h1>
+      <div class="dashboard">
+        <a class="module" href="pages/analyse.html">
+          <h2>Analyse des matchs</h2>
+          <!-- Contenu du module "Analyse des matchs" -->
+        </a>
 
-      <a class="module" href="pages/liste.html">
-        <h2>Liste des équipes</h2>
-        <!-- Contenu du module "Liste des équipes" -->
-      </a>
+        <a class="module" href="pages/reservation.html">
+          <h2>Réservation d'un terrain</h2>
+          <!-- Contenu du module "Réservation d'un terrain" -->
+        </a>
 
-      <a class="module" href="pages/messagerie.html">
-        <h2>Messagerie</h2>
-        <!-- Contenu du module "Messagerie" -->
-      </a>
+        <a class="module" href="pages/liste.html">
+          <h2>Liste des équipes</h2>
+          <!-- Contenu du module "Liste des équipes" -->
+        </a>
+
+        <a class="module" href="pages/messagerie.html">
+          <h2>Messagerie</h2>
+          <!-- Contenu du module "Messagerie" -->
+        </a>
+      </div>
     </div>
   </body>
 </html>
