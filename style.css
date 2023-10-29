@@ -42,10 +42,15 @@ body {
 /* page Analyse */
 
 table {
-  width: 70%; /* Ajustez la largeur du tableau selon vos besoins */
+  width: 80%; /* Ajustez la largeur du tableau selon vos besoins */
   text-align: center;
   border-collapse: collapse;
   margin: 0 auto;
+  font-size: 16px; /* Ajuster la taille de la police du texte dans le tableau */
+}
+
+table a {
+  color: inherit; /* Utilise la couleur par défaut du texte */
 }
 
 th,
@@ -58,9 +63,13 @@ th {
   color: #fff;
 }
 
+tr {
+  height: 50px; /* Ajustez la hauteur des lignes comme vous le souhaitez */
+}
+
 tr:nth-child(even) {
   background-color: #1f1f1f; /* Couleur de fond pour les lignes paires */
-  color: #fff; /* Couleur du texte pour les lignes impaires */
+  color: #fff; /* Couleur du texte pour les lignes paires */
 }
 
 tr:nth-child(odd) {
